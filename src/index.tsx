@@ -1,15 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './componentes/app/App';
+import Navbar from './componentes/navbar/Navbar';
 import reportWebVitals from './reportWebVitals';
+import Footer from './componentes/footer/Footer';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
+
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+
+    <Navbar 
+    item1 = 'Hello world'
+    item2 = {5} // numero sempre dentro de chaves
+    />
+
+    <Footer
+    item1 = 'Apoiadores'
+    item2 = 'Senac'
+    item3 = 'Sesc'
+    item4 = 'Equipe Rafael'
+    />
+
   </React.StrictMode>
 );
 
