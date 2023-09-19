@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './componentes/app/App';
-// import Navbar from './componentes/navbar/Navbar';
-// import Footer from './componentes/footer/Footer';
+import Navbar from './componentes/navbar/Navbar';
+import Footer from './componentes/footer/Footer';
 import Imagem from './componentes/imagem/Imagem'
-// import Card from './componentes/card/Card';
+import Card from './componentes/card/Card';
 import reportWebVitals from './reportWebVitals';
 
 
@@ -15,9 +15,9 @@ const root = ReactDOM.createRoot(
 root.render(
 
   <React.StrictMode>
-    {/* <App /> */}
+     {/* <App />  */}
 
-    {/* <Navbar 
+    <Navbar 
     item1 = 'Hello world'
     item2 = {5}           // numero sempre dentro de chaves
     />
@@ -27,11 +27,11 @@ root.render(
     item2 = 'Senac'
     item3 = 'Sesc'
     item4 = 'Equipe Rafael'
-    /> */}
+    /> 
 
     <Imagem/>
 
-    {/* <Card /> */}
+     <Card />
 
   </React.StrictMode>
 );
